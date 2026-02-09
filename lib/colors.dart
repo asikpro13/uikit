@@ -10,6 +10,6 @@ const success = Color(0xff00B412);
 const input_bg = Color(0xffF7F7FA);
 const input_stroke = Color(0xffE6E6E6);
 const input_icon = Color(0xffBFC7D1);
-const placeholde = Color(0xff98989A);
+const placeholder = Color(0xff98989A);
 const description = Color(0xff8787A1);
 const card_stroke = Color(0xffF2F2F2);
