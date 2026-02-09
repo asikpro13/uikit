@@ -45,6 +45,7 @@ class CustomHeader extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: paddingHeader),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
