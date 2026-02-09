@@ -207,7 +207,6 @@ class CustomCard extends StatelessWidget {
                     onPressed: onPressed!,
                     widthButton: widthButton!,
                     heightButton: heightButton!,
-                    colorBorder: colorBorder!,
                     borderRadiusButton: borderRadiusButton!,
                     textButton: textButton!,
                     textColor: textColor!,
