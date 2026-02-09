@@ -137,83 +137,87 @@ class CustomCard extends StatelessWidget {
     }
     if (typeCard == TypeCard.cart) {
       return Card(
-        margin: EdgeInsets.all(margin),
         color: background,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(borderRadius))),
-        child: Column(
-          children: [
-            Row(
-              children: [
-                SizedBox(
-                  width: widthTitle,
-                  child: Text(title, style: headlineMedium),
-                ),
-                Spacer(),
-                CustomIconSVG(pathIcon: pathIcon!, onIcon: onIcon!, widthIcon: widthIcon!, heightIcon: heightIcon!),
-              ],
-            ),
-            SizedBox(height: 30),
-            Row(
-              children: [
-                Text(text, style: title3Medium),
-                Spacer(),
-                Text(text2, style: textRegular),
-                SizedBox(width: 30),
-                CustomCounter(
-                  widthCounter: widthCounter!,
-                  heightCounter: heightCounter!,
-                  background: backgroundCounter!,
-                  pathPlus: pathPlus!,
-                  onPlus: onPlus!,
-                  widthPlus: widthPlus!,
-                  heightPlus: heightPlus!,
-                  pathMinus: pathMinus!,
-                  onMinus: onMinus!,
-                  widthMinus: widthMinus!,
-                  heightMinus: heightMinus!,
-                  borderRadius: borderRadiusCounter!,
-                ),
-              ],
-            ),
-          ],
+        child: Padding(
+          padding:  EdgeInsets.all(margin),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  SizedBox(
+                    width: widthTitle,
+                    child: Text(title, style: headlineMedium),
+                  ),
+                  Spacer(),
+                  CustomIconSVG(pathIcon: pathIcon!, onIcon: onIcon!, widthIcon: widthIcon!, heightIcon: heightIcon!),
+                ],
+              ),
+              SizedBox(height: 30),
+              Row(
+                children: [
+                  Text(text, style: title3Medium),
+                  Spacer(),
+                  Text(text2, style: textRegular),
+                  SizedBox(width: 30),
+                  CustomCounter(
+                    widthCounter: widthCounter!,
+                    heightCounter: heightCounter!,
+                    background: backgroundCounter!,
+                    pathPlus: pathPlus!,
+                    onPlus: onPlus!,
+                    widthPlus: widthPlus!,
+                    heightPlus: heightPlus!,
+                    pathMinus: pathMinus!,
+                    onMinus: onMinus!,
+                    widthMinus: widthMinus!,
+                    heightMinus: heightMinus!,
+                    borderRadius: borderRadiusCounter!,
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       );
     } else {
       return Card(
-        margin: EdgeInsets.all(margin),
         color: background,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(borderRadius))),
-        child: Column(
-          children: [
-            Row(
-              children: [
-                SizedBox(
-                  width: widthTitle,
-                  child: Text(title, style: headlineMedium),
-                ),
-                Spacer(),
-              ],
-            ),
-            SizedBox(height: 40),
-            Row(
-              children: [
-                Text(text, style: captionSemibold),
-                Spacer(),
-                CustomButton(
-                  typeButton: TypeButton.primary,
-                  onPressed: onPressed!,
-                  widthButton: widthButton!,
-                  heightButton: heightButton!,
-                  colorBorder: colorBorder!,
-                  borderRadiusButton: borderRadiusButton!,
-                  textButton: textButton!,
-                  textColor: textColor!,
-                  backgroundButton: backgroundButton!,
-                  paddingButton: paddingButton!,
-                ),
-              ],
-            ),
-          ],
+        child: Padding(
+          padding:  EdgeInsets.all(margin),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  SizedBox(
+                    width: widthTitle,
+                    child: Text(title, style: headlineMedium),
+                  ),
+                  Spacer(),
+                ],
+              ),
+              SizedBox(height: 40),
+              Row(
+                children: [
+                  Text(text, style: captionSemibold),
+                  Spacer(),
+                  CustomButton(
+                    typeButton: TypeButton.primary,
+                    onPressed: onPressed!,
+                    widthButton: widthButton!,
+                    heightButton: heightButton!,
+                    colorBorder: colorBorder!,
+                    borderRadiusButton: borderRadiusButton!,
+                    textButton: textButton!,
+                    textColor: textColor!,
+                    backgroundButton: backgroundButton!,
+                    paddingButton: paddingButton!,
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       );
     }
