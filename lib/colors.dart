@@ -13,3 +13,4 @@ const input_icon = Color(0xffBFC7D1);
 const placeholder = Color(0xff98989A);
 const description = Color(0xff8787A1);
 const card_stroke = Color(0xffF2F2F2);
+const caption = Color(0xff939396);

@@ -110,7 +110,7 @@ class CustomCard extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(text, style: captionSemibold),
+                      Text(text, style: captionSemibold.copyWith(color: caption)),
                       SizedBox(height: 10),
                       Text(text2, style: title3Semibold),
                     ],
