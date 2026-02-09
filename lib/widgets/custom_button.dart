@@ -11,7 +11,7 @@ class CustomButton extends StatelessWidget {
   final VoidCallback onPressed; //
   final double widthButton; //
   final double heightButton; //
-  final Radius borderRadiusButton; //
+  final double borderRadiusButton; //
   final String textButton; //
   final String? price; //
   final Color textColor; //
@@ -55,7 +55,7 @@ class CustomButton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           minimumSize: Size(widthButton, heightButton),
           backgroundColor: backgroundButton,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(borderRadiusButton)),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(borderRadiusButton))),
         ),
         onPressed: onPressed,
         child: Padding(
@@ -76,7 +76,7 @@ class CustomButton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           minimumSize: Size(widthButton, heightButton),
           backgroundColor: backgroundButton,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(borderRadiusButton)),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(borderRadiusButton))),
         ),
         onPressed: onPressed,
         child: Padding(
@@ -97,7 +97,7 @@ class CustomButton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           minimumSize: Size(widthButton, heightButton),
           backgroundColor: isSelected! ? selectedButton : backgroundButton,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(borderRadiusButton)),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(borderRadiusButton))),
         ),
         onPressed: onPressed,
         child: Text(textButton, style: title3Semibold.copyWith(color: isSelected! ? selectedText : textColor)),
@@ -107,7 +107,7 @@ class CustomButton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           minimumSize: Size(widthButton, heightButton),
           backgroundColor: backgroundButton,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(borderRadiusButton)),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(borderRadiusButton))),
           side: typeButton == TypeButton.secondary ? BorderSide(color: colorBorder!) : BorderSide.none,
         ),
         onPressed: onPressed,
