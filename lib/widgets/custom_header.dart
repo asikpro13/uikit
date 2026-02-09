@@ -7,19 +7,19 @@ enum TypeHeader { small, big }
 
 // Губайдуллиана Камилла Рустемовна, 09.02.2026, 17:34, класс хэдера
 class CustomHeader extends StatelessWidget {
-  final TypeHeader typeHeader;
-  final String textHeader; //
-  final String pathBubble; //
-  final VoidCallback onBubble; //
-  final double widthBubble; //
-  final double heightBubble; //
-  final Color backgroundBubble; //
-  final double radiusBubble; //
-  final String pathIcon; //
-  final VoidCallback onIcon; //
-  final double widthIcon; //
-  final double heightIcon; //
-  final double paddingHeader; //
+  final TypeHeader typeHeader; // Тип хэдера
+  final String textHeader; // Текст хэдера
+  final String pathBubble; // Путь к иконке
+  final VoidCallback onBubble; // Действие при нажатии на иконку
+  final double widthBubble; // Ширина иконки
+  final double heightBubble; // Высота иконки
+  final Color backgroundBubble; // Фон иконки
+  final double radiusBubble; // Закругление фона
+  final String pathIcon; // Путь к иконке
+  final VoidCallback onIcon; // Действие при нажатии на иконку
+  final double widthIcon; // Ширина иконки
+  final double heightIcon; // Высота иконки
+  final double paddingHeader; // Отступы
 
   const CustomHeader({
     super.key,

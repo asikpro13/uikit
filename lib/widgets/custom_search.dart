@@ -3,19 +3,19 @@ import 'package:uikit/uikit.dart';
 
 // Губайдуллиана Камилла Рустемовна, 09.02.2026, 17:52, класс поиска
 class CustomSearch extends StatelessWidget {
-  final TextEditingController searchController; //
-  final String hintSearch; //
-  final Color colorBorder; //
-  final Color backgroundSearch; //
-  final Color colorCursor; //
-  final double borderRadiusSearch; //
-  final String pathIcon; //
-  final VoidCallback onIcon; //
-  final double widthIcon; //
-  final double heightIcon; //
-  final String pathIcon2; //
-  final double widthIcon2; //
-  final double heightIcon2; //
+  final TextEditingController searchController; // Контроллер
+  final String hintSearch; // Заголовое поиска
+  final Color colorBorder; // Цвет границ
+  final Color backgroundSearch; // Фон
+  final Color colorCursor; // Цвет курсора
+  final double borderRadiusSearch; // Закругление фона
+  final String pathIcon; // Путь к иконке
+  final VoidCallback onIcon; // Действие при нажатии на иконку
+  final double widthIcon; // Ширина иконки
+  final double heightIcon; // Высота иконки
+  final String pathIcon2; // Путь к иконке
+  final double widthIcon2; // Ширина иконки
+  final double heightIcon2; // Высота иконки
 
   const CustomSearch({
     super.key,
@@ -53,7 +53,7 @@ class CustomSearch extends StatelessWidget {
           borderSide: BorderSide(color: colorBorder),
         ),
         prefix: CustomIconSVG(pathIcon: pathIcon, onIcon: onIcon, widthIcon: widthIcon, heightIcon: heightIcon),
-        suffix: searchController.text.isNotEmpty ? CustomIconSVG(pathIcon: pathIcon2, onIcon: () {
+        suffix: searchController.text.isEmpty ? CustomIconSVG(pathIcon: pathIcon2, onIcon: () {
           searchController.clear();
         }, widthIcon: widthIcon2, heightIcon: heightIcon2) : null,
       ),

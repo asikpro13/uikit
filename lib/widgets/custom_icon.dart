@@ -3,10 +3,10 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 // Губайдуллиана Камилла Рустемовна, 09.02.2026, 16:51, класс svg-иконки
 class CustomIconSVG extends StatelessWidget {
-  final String pathIcon; //
-  final VoidCallback onIcon; //
-  final double widthIcon; //
-  final double heightIcon; //
+  final String pathIcon; // Путь к иконке
+  final VoidCallback onIcon; // Действие при нажатии на иконку
+  final double widthIcon; // Ширина иконки
+  final double heightIcon; // Высота иконки
 
   const CustomIconSVG({super.key, required this.pathIcon, required this.onIcon, required this.widthIcon, required this.heightIcon});
 

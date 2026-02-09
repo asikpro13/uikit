@@ -7,24 +7,24 @@ enum TypeButton { primary, inactive, secondary, tetriary, chips, login, cart }
 
 // Губайдуллиана Камилла Рустемовна, 09.02.2026, 18:23, класс кнопки
 class CustomButton extends StatelessWidget {
-  final TypeButton typeButton; //
-  final VoidCallback onPressed; //
-  final double widthButton; //
-  final double heightButton; //
-  final double borderRadiusButton; //
-  final String textButton; //
-  final String? price; //
-  final Color textColor; //
-  final Color backgroundButton; //
-  final Color? colorBorder; //
-  final String? pathIcon; //
-  final VoidCallback? onIcon; //
-  final double? widthIcon; //
-  final double? heightIcon; //
-  final bool? isSelected; //
-  final Color? selectedText; //
-  final Color? selectedButton; //
-  final double paddingButton;
+  final TypeButton typeButton; // Тип кнопки
+  final VoidCallback onPressed; // Действие при нажатии на кнопку
+  final double widthButton; // Ширина кнопки
+  final double heightButton; // Высота кнопки
+  final double borderRadiusButton; // Закругление кнопки
+  final String textButton; // Текст кнопки
+  final String? price; // Параметр для cart
+  final Color textColor; // Цвет текста
+  final Color backgroundButton; // Фон кнопки
+  final Color? colorBorder; // Цвет границ
+  final String? pathIcon; // Путь к иконке
+  final VoidCallback? onIcon; // Действие при нажатии на иконку
+  final double? widthIcon; // Ширина иконки
+  final double? heightIcon; // Высота иконки
+  final bool? isSelected; // Параметр для chips
+  final Color? selectedText; // Параметр для chips
+  final Color? selectedButton; // Параметр для chips
+  final double paddingButton; // Отступы
 
   const CustomButton({
     super.key,
