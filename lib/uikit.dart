@@ -2,4 +2,6 @@
 
 library uikit;
 
-// export '';
+export 'colors.dart';
+export 'styles.dart';
+export 'widgets/custom_icon.dart';
