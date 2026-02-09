@@ -2,7 +2,7 @@ import 'dart:ui';
 
 // Губайдуллиана Камилла Рустемовна, 09.02.2026, 14:50, основные цвета для проекта
 const accent = Color(0xff2074F2);
-const accent_inastive = Color(0xffC5D2FF);
+const accent_inactive = Color(0xffC5D2FF);
 const black = Color(0xff2D2C2C);
 const white = Color(0xffF7F7F7);
 const error = Color(0xffFF4646);
