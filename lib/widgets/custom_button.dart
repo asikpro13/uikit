@@ -64,9 +64,17 @@ class CustomButton extends StatelessWidget {
             children: [
               CustomIconSVG(pathIcon: pathIcon!, onIcon: onIcon!, widthIcon: widthIcon!, heightIcon: heightIcon!),
               SizedBox(width: 20),
-              Text(textButton, style: title3Semibold.copyWith(color: textColor)),
+              Text(
+                textButton,
+                overflow: TextOverflow.ellipsis,
+                style: title3Semibold.copyWith(color: textColor),
+              ),
               Spacer(),
-              Text(price!, style: title3Semibold.copyWith(color: textColor)),
+              Text(
+                price!,
+                overflow: TextOverflow.ellipsis,
+                style: title3Semibold.copyWith(color: textColor),
+              ),
             ],
           ),
         ),
@@ -86,7 +94,11 @@ class CustomButton extends StatelessWidget {
               Spacer(),
               CustomIconSVG(pathIcon: pathIcon!, onIcon: onIcon!, widthIcon: widthIcon!, heightIcon: heightIcon!),
               SizedBox(width: 20),
-              Text(textButton, style: title3Semibold.copyWith(color: textColor)),
+              Text(
+                textButton,
+                overflow: TextOverflow.ellipsis,
+                style: title3Semibold.copyWith(color: textColor),
+              ),
               Spacer(),
             ],
           ),
@@ -100,7 +112,11 @@ class CustomButton extends StatelessWidget {
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(borderRadiusButton))),
         ),
         onPressed: onPressed,
-        child: Text(textButton, style: title3Semibold.copyWith(color: isSelected! ? selectedText : textColor)),
+        child: Text(
+          textButton,
+          overflow: TextOverflow.ellipsis,
+          style: title3Semibold.copyWith(color: isSelected! ? selectedText : textColor),
+        ),
       );
     } else {
       return ElevatedButton(
@@ -111,7 +127,11 @@ class CustomButton extends StatelessWidget {
           side: typeButton == TypeButton.secondary ? BorderSide(color: colorBorder!) : BorderSide.none,
         ),
         onPressed: onPressed,
-        child: Text(textButton, style: title3Semibold.copyWith(color: textColor)),
+        child: Text(
+          textButton,
+          overflow: TextOverflow.ellipsis,
+          style: title3Semibold.copyWith(color: textColor),
+        ),
       );
     }
   }
