@@ -8,7 +8,7 @@ class CustomSearch extends StatelessWidget {
   final Color colorBorder; //
   final Color backgroundSearch; //
   final Color colorCursor; //
-  final Radius borderRadiusSearch; //
+  final double borderRadiusSearch; //
   final String pathIcon; //
   final VoidCallback onIcon; //
   final double widthIcon; //
@@ -45,11 +45,11 @@ class CustomSearch extends StatelessWidget {
         hintText: hintSearch,
         hintStyle: headlineRegular,
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.all(borderRadiusSearch),
+          borderRadius: BorderRadius.all(Radius.circular(borderRadiusSearch)),
           borderSide: BorderSide(color: colorBorder),
         ),
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.all(borderRadiusSearch),
+          borderRadius: BorderRadius.all(Radius.circular(borderRadiusSearch)),
           borderSide: BorderSide(color: colorBorder),
         ),
         prefix: CustomIconSVG(pathIcon: pathIcon, onIcon: onIcon, widthIcon: widthIcon, heightIcon: heightIcon),
