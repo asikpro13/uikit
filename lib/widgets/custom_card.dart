@@ -92,43 +92,45 @@ class CustomCard extends StatelessWidget {
   Widget build(BuildContext context) {
     if (typeCard == TypeCard.primary) {
       return Card(
-        margin: EdgeInsets.all(margin),
         color: background,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(borderRadius))),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            SizedBox(
-              width: widthTitle,
-              child: Text(title, style: headlineMedium),
-            ),
-            SizedBox(height: 20),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Column(
-                  children: [
-                    Text(text, style: captionSemibold),
-                    SizedBox(height: 10),
-                    Text(text2, style: title3Semibold),
-                  ],
-                ),
-                Spacer(),
-                CustomButton(
-                  typeButton: inCart! ? TypeButton.secondary : TypeButton.primary,
-                  onPressed: onPressed!,
-                  widthButton: widthButton!,
-                  heightButton: heightButton!,
-                  colorBorder: colorBorder!,
-                  borderRadiusButton: borderRadiusButton!,
-                  textButton: inCart! ? textButton! : textButton2!,
-                  textColor: inCart! ? textColor! : selectedText!,
-                  backgroundButton: inCart! ? backgroundButton! : selectedButton!,
-                  paddingButton: paddingButton!,
-                ),
-              ],
-            ),
-          ],
+        child: Padding(
+          padding:  EdgeInsets.all(margin),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                width: widthTitle,
+                child: Text(title, style: headlineMedium),
+              ),
+              SizedBox(height: 20),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Column(
+                    children: [
+                      Text(text, style: captionSemibold),
+                      SizedBox(height: 10),
+                      Text(text2, style: title3Semibold),
+                    ],
+                  ),
+                  Spacer(),
+                  CustomButton(
+                    typeButton: inCart! ? TypeButton.secondary : TypeButton.primary,
+                    onPressed: onPressed!,
+                    widthButton: widthButton!,
+                    heightButton: heightButton!,
+                    colorBorder: colorBorder!,
+                    borderRadiusButton: borderRadiusButton!,
+                    textButton: inCart! ? textButton! : textButton2!,
+                    textColor: inCart! ? textColor! : selectedText!,
+                    backgroundButton: inCart! ? backgroundButton! : selectedButton!,
+                    paddingButton: paddingButton!,
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       );
     }
