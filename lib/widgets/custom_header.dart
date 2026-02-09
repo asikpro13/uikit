@@ -41,29 +41,36 @@ class CustomHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (typeHeader == TypeHeader.big) {
-      return Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              CustomBubble(backgroundBubble: backgroundBubble, radiusBubble: radiusBubble, pathBubble: pathBubble, onBubble: onBubble, widthBubble: widthBubble, heightBubble: heightBubble),
-              Spacer(),
-              CustomIconSVG(pathIcon: pathIcon, onIcon: onIcon, widthIcon: widthIcon, heightIcon: heightIcon),
-            ],
-          ),
-          SizedBox(height: 20),
-          Text(textHeader, style: title1ExtraBold),
-        ],
+      return Padding(
+        padding: EdgeInsets.symmetric(horizontal: paddingHeader),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                CustomBubble(backgroundBubble: backgroundBubble, radiusBubble: radiusBubble, pathBubble: pathBubble, onBubble: onBubble, widthBubble: widthBubble, heightBubble: heightBubble),
+                Spacer(),
+                CustomIconSVG(pathIcon: pathIcon, onIcon: onIcon, widthIcon: widthIcon, heightIcon: heightIcon),
+              ],
+            ),
+            SizedBox(height: 20),
+            Text(textHeader, style: title1ExtraBold),
+          ],
+        ),
       );
     } else {
-      return Row(
-        children: [
-          CustomBubble(backgroundBubble: backgroundBubble, radiusBubble: radiusBubble, pathBubble: pathBubble, onBubble: onBubble, widthBubble: widthBubble, heightBubble: heightBubble),
-          Spacer(),
-          Text(textHeader, style: title2Semibold),
-          Spacer(),
-          CustomIconSVG(pathIcon: pathIcon, onIcon: onIcon, widthIcon: widthIcon, heightIcon: heightIcon),
-        ],
+      return Padding(
+        padding: EdgeInsets.symmetric(horizontal: paddingHeader),
+        child: Row(
+          children: [
+            CustomBubble(backgroundBubble: backgroundBubble, radiusBubble: radiusBubble, pathBubble: pathBubble, onBubble: onBubble, widthBubble: widthBubble, heightBubble: heightBubble),
+            Spacer(),
+            Text(textHeader, style: title2Semibold),
+            Spacer(),
+            CustomIconSVG(pathIcon: pathIcon, onIcon: onIcon, widthIcon: widthIcon, heightIcon: heightIcon),
+          ],
+        ),
       );
     }
   }
