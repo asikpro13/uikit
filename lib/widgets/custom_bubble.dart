@@ -8,7 +8,7 @@ class CustomBubble extends StatelessWidget {
   final double widthBubble; //
   final double heightBubble; //
   final Color backgroundBubble; //
-  final Radius radiusBubble; //
+  final double radiusBubble; //
 
   const CustomBubble({super.key, required this.backgroundBubble, required this.radiusBubble, required this.pathBubble, required this.onBubble, required this.widthBubble, required this.heightBubble});
 
@@ -17,7 +17,7 @@ class CustomBubble extends StatelessWidget {
     return GestureDetector(
       onTap: onBubble,
       child: Container(
-        decoration: BoxDecoration(borderRadius: BorderRadius.all(radiusBubble + Radius.circular(10)), color: backgroundBubble),
+        decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(radiusBubble)), color: backgroundBubble),
         child: SvgPicture.asset(pathBubble, width: widthBubble, height: heightBubble),
       ),
     );

@@ -14,7 +14,7 @@ class CustomHeader extends StatelessWidget {
   final double widthBubble; //
   final double heightBubble; //
   final Color backgroundBubble; //
-  final Radius radiusBubble; //
+  final double radiusBubble; //
   final String pathIcon; //
   final VoidCallback onIcon; //
   final double widthIcon; //
